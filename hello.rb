@@ -17,3 +17,16 @@ puts greet.upcase; #convert to uppercase
 puts greet.capitalize; #first letter capital of string
 puts greet.reverse; # reverse a string
 puts greet.length; #length of string
+
+#########################################################################
+
+#Variables
+
+first_name = "Manish"
+last_name = "Shirsat"
+age = 24
+puts first_name;
+puts last_name;
+puts age;
+puts first_name + last_name;
+
