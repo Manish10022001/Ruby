@@ -30,3 +30,12 @@ puts last_name;
 puts age;
 puts first_name + last_name;
 
+######################################################################
+#Getting user inputs with Gets
+print "Enter your name: "
+name = gets.chomp  # gets same as puts place string after gets at new line so to avoid it we use .chomp
+
+#puts "Hello " + name + " How are you" #concatenate using + 
+
+#better way to concatenate using interpolation -> #{}
+puts "Hello #{name.downcase}, how are you?" #note: everything in ruby is object so we can do object thing to it
