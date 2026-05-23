@@ -64,3 +64,29 @@ puts "#{number + 10}";
 #convert integer to string
 convertedString = number.to_s;
 puts "converted number back to string: #{convertedString}"
+
+##################################################
+#Comparision Operators
+=begin
+    ==  !=  >   <   >=  <=
+=end
+
+puts 3==3
+puts 5<=2;
+puts "john" == "john" #true
+puts "john" == "John" #false
+puts "john" == "John".downcase #true
+
+##############################################
+#Assignment Operators
+=begin
+    =   +=  -+  /=  *=  %=
+=end
+age = 39
+puts age+1 #40
+puts age #39 as we did not assign after increment
+
+puts age+=1; #40
+puts age; #40
+
+####################################
