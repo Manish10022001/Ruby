@@ -39,3 +39,28 @@ name = gets.chomp  # gets same as puts place string after gets at new line so to
 
 #better way to concatenate using interpolation -> #{}
 puts "Hello #{name.downcase}, how are you?" #note: everything in ruby is object so we can do object thing to it
+
+
+####################################################
+#Simple Math
+#Integer - whole number e.g 1,23,211,0,2
+#float - with decimal points eg. 1.2, 0.3,11.2
+
+puts 5+1;
+puts 6/2;
+puts 4**2;
+puts 24.0-5.8;
+puts 8.0%3;
+
+##################################################
+#Converting to integer or back to string
+
+print "Enter a number: "
+number = gets.to_i; #.to_i converts to integer
+                   #.to_f converts to float
+                   #.to_s converts to string
+puts "#{number + 10}";
+
+#convert integer to string
+convertedString = number.to_s;
+puts "converted number back to string: #{convertedString}"
