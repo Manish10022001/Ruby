@@ -199,3 +199,36 @@ end
 greet = hello("Tim","David")
 puts greet
 puts greet.upcase
+
+
+################################################################3
+#Class
+class Square
+    #three methods are must in class
+    #1st -> Initialize method
+    def initialize(side_length)
+        @side_length = side_length; # @ means instance variable which can be used everywhere in the class
+    end
+
+    # 2nd -> Getter method : to get things , use same name as intance variable
+    def side_length
+        return @side_length;
+    end
+
+    #3rd method -> Setter method to set things, again cannot use intance variable name as it will repeat
+    # so use = to assing and the paramerter eg. side_length=(side_length)
+    def side_length=(side_length) #used to change the value
+        @side_length = side_length;
+    end
+end
+
+#to get output
+my_square = Square.new(30); #assigned side length
+puts my_square.inspect; #.inspect is used to inspect
+
+#now get using getter method
+puts my_square.side_length
+
+#to change the value using setter method
+my_square.side_length = 34
+puts my_square.side_length
