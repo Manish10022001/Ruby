@@ -1,10 +1,11 @@
+system "clear"
 # puts string on new line
 puts "Hello World";
 puts "My name is Manish";
 
 #prints -> print line on the same line
 print "Hello World";
-puts " my name is Ajinkya"
+puts " my name is Akjinkya"
 
 #-----------------------------------------
 #String Manipulations
@@ -90,3 +91,32 @@ puts age+=1; #40
 puts age; #40
 
 ####################################
+#Ifelse conditional statements
+=begin
+    if
+    if..else
+    if..elsif..else
+=end
+puts "Enter a number between 1 and 10: "
+num = gets.to_i;
+
+if num>10
+    puts "Hey! I said number between 1 to 10"
+elsif num>5
+    puts "#{num} is greater than 5"
+elsif num==5
+    puts "#{num} is equal to 5"
+else
+    puts "#{num} is less than 5"
+end
+
+#########################################################
+#Arrays -> []
+nums = [1,2,3,4,5]
+names = ["John", "Rob","Ryan","Tim", nums]
+puts names
+puts names[2]
+puts names[names.length-1][3];
+
+
+##########################################################
