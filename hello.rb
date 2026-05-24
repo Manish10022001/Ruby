@@ -260,3 +260,31 @@ puts my_square ##<Square:0x0000021ca0938140> get this as output, as it is intege
 =end
 #so to avoid writings so much we create for string conversion so we get output
 
+
+#attr_accessor: create getter and setter for us
+class Rectangle
+    attr_accessor :length, :breadth
+
+    def initialize(length,breadth)
+        @length = length
+        @breadth = breadth
+    end
+
+    def perimeter
+        return 2 * (@length * @breadth)
+    end
+    
+    def area
+        return @length * @breadth
+    end
+
+    def to_s
+        return "Length = #{@length}\n Breadth = #{@breadth}\n Perimeter = #{perimeter}\n Area = #{area}"
+    end
+end
+
+my_rectangle = Rectangle.new(20,30)
+puts my_rectangle
+
+my_rectangle.length = 40
+puts my_rectangle
