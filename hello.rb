@@ -132,3 +132,19 @@ while num<10
     puts num
     num +=1
 end
+
+##################################################
+#For Each ->preferred by ruby developers
+
+(1..5).each do |num|
+    puts num
+end
+
+names = ["John","Tim","Rob","Luke"]
+names.each do |first_name|
+    puts first_name
+end
+
+#we make it shorter by using {}
+names.each{ |first_name| puts "My name is #{first_name}"}
+
