@@ -174,3 +174,28 @@ puts favorite_pizza["John"]
         puts num
     end
 end
+
+####################################################################
+#methods
+=begin
+def hello()
+    puts "Hell0"
+end
+hello
+=end
+
+=begin
+def hello(first_name, last_name)
+    puts "Hello #{first_name} #{last_name}"
+end
+last_name = "Elder"
+hello("John",last_name)
+=end
+
+def hello(first_name, last_name)
+    return "Hello #{first_name} #{last_name}"
+end
+
+greet = hello("Tim","David")
+puts greet
+puts greet.upcase
