@@ -148,3 +148,13 @@ end
 #we make it shorter by using {}
 names.each{ |first_name| puts "My name is #{first_name}"}
 
+################################################################
+#Hashes
+favorite_pizza = {
+    "John" => "Pepper",
+    "Tim" => "Mushroom",
+    "Mary" => "Cheese"
+}
+
+puts favorite_pizza
+puts favorite_pizza["John"]
