@@ -158,3 +158,19 @@ favorite_pizza = {
 
 puts favorite_pizza
 puts favorite_pizza["John"]
+
+###############################################################
+#FizzBuzz problem: if number/3 then fizz if number/5 then buzz if number divide by 3 and 5 then FizzBuzz
+
+(1..100).each do |num|
+    if(num%3==0 && num%5==0)
+        puts "FizzBuzz"
+
+    elsif(num%3==0)
+        puts "Fizz"
+    elsif(num%5==0)
+        puts "Buzz"
+    else
+        puts num
+    end
+end
