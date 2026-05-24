@@ -120,3 +120,15 @@ puts names[names.length-1][3];
 
 
 ##########################################################
+#While
+=begin
+    WHILE CONDITION
+        DO SOMETHING
+        INCRE/DECRE
+    END
+=end
+num = 1
+while num<10
+    puts num
+    num +=1
+end
