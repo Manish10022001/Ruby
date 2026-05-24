@@ -220,9 +220,22 @@ class Square
     def side_length=(side_length) #used to change the value
         @side_length = side_length;
     end
+
+    def perimeter
+        return @side_length * 4;
+    end
+
+    def area 
+        return @side_length * @side_length
+    end
+
+    def to_s
+        return "Side length is :#{@side_length}\n Perimeter : #{perimeter} \n Area : #{area}"
+    end
 end
 
 #to get output
+
 my_square = Square.new(30); #assigned side length
 puts my_square.inspect; #.inspect is used to inspect
 
@@ -232,3 +245,18 @@ puts my_square.side_length
 #to change the value using setter method
 my_square.side_length = 34
 puts my_square.side_length
+
+puts my_square.perimeter
+puts my_square.area
+
+puts my_square ##<Square:0x0000021ca0938140> get this as output, as it is integer so to get result we can 
+                #create a method to convert this to string , so we get output
+
+=begin output after using method to_s
+ Side length is :34
+ Perimeter : 136 
+ Area : 1156
+
+=end
+#so to avoid writings so much we create for string conversion so we get output
+
