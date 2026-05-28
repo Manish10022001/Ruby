@@ -43,3 +43,33 @@ puts "hello".length         #5
 
 # reverse : to reverse a string
 puts "hello".reverse
+
+#split : Divides a string into an array of substrings based on a separator.
+print "hello world".split    #["hello", "world"] default(split by spaces)
+print "hello, world".split(",") #split by specific character (,)
+print "hello, world".split("") #["h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d"]
+                               #split into individual characters
+print "Hello, world and welcome".split("and") #split using word
+puts
+
+#stript : Removes leading and trailing whitespace from a string
+puts "  Hello World   ".strip
+
+#sub : Replaces the first occurrence of a specified pattern or substring
+puts "He77o".sub("7","l")
+
+#gsub: Replaces all occurrences of a specified pattern or substring
+puts "He77o".gsub("7","l")
+
+# insert : Inserts a substring at a specified position in a string.
+puts "Hello".insert(-1," dude")
+
+# delete : Removes specified characters from a string.
+puts "Hello world".delete("l")
+
+# prepend : Adds one or more strings to the beginning of a string.
+puts "!".prepend("Hello ","world")
+
+#Converting other objects to strings
+puts "Converting other objects to strings"
+puts 5.to_s;
