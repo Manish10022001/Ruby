@@ -1,3 +1,5 @@
+#Nested arrays
+puts "NESTED ARRAY"
 test_scores = [
     [83,88,29,93],
     [8,22,100,83],
@@ -19,3 +21,18 @@ puts
 print teacher_mailboxes[0] #["Adams", "Baker", "Clark", "Davis"]
 puts
 puts teacher_mailboxes[0][3] # Davis
+
+puts
+
+#NESTED HASHES
+puts "Nested Hashes: "
+vehicles = {
+  alice: {year: 2019, make: "Toyota", model: "Corolla"},
+  blake: {year: 2020, make: "Volkswagen", model: "Beetle"},
+  caleb: {year: 2020, make: "Honda", model: "Accord"}
+}
+print vehicles
+puts
+
+puts vehicles[:alice][:year]
+puts vehicles[:blake][:make]
